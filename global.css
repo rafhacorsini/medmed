@@ -1,0 +1,83 @@
+/* General Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; 
+  line-height: 1.6; 
+}
+
+/* Landing Page Container */
+.landing-new {
+  background: #f3f3fd;
+  min-height: 100vh; 
+  position: relative;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.35);
+  overflow-x: hidden;
+  padding: 5%; 
+}
+
+/* Background Elements */
+.background {
+  position: absolute;
+  inset: 0;
+}
+
+.ellipse-1,
+.ellipse-2 {
+  position: absolute;
+  border-radius: 50%; 
+  filter: blur(20px); /* Adjust blur as needed */
+}
+
+.ellipse-1 {
+  width: 15vw;
+  height: 15vw;
+  top: 10vh;
+  left: 60vw;
+}
+
+.ellipse-2 {
+  width: 20vw;
+  height: 20vw;
+  top: 15vh;
+  left: 10vw;
+}
+
+/* Frame-1 (Example) */
+.frame-1 {
+  position: absolute; 
+  /* Consider removing absolute positioning and using flexbox for better layout */
+}
+
+/* ... (Remaining styles with similar adjustments) */
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) { 
+  /* Adjust font sizes */
+  h1, h2, h3 {
+    font-size: 2rem; /* Adjust as needed */
+  }
+
+  /* Adjust image sizes */
+  .dor-1, .dor-no-peito-1, .prejuizo-1 {
+    width: 50%; 
+  }
+
+  /* Adjust layout */
+  .frame-3 {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  /* ... (Other adjustments based on your specific needs) */
+}
+
+@media screen and (max-width: 480px) {
+  /* Further adjustments for smaller screens */
+}
